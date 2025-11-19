@@ -191,7 +191,8 @@ public class DeliveryApp {
     }
 
     private static void printBoxContents(ParcelBox<? extends Parcel> parcelBox) {
-        System.out.println("Коробка с надписью \"" + parcelBox.getName() + "\"(" + parcelBox.getCurrentWeight() + "/" + parcelBox.getMaxWeight() + " кг.):");
+        System.out.println("Коробка с надписью \"" + parcelBox.getName()
+                + "\"(" + parcelBox.getCurrentWeight() + "/" + parcelBox.getMaxWeight() + " кг.):");
         for (Parcel parcel : parcelBox.getAllParcels()) {
             System.out.println(parcel.getDescription() + ", вес: " + parcel.getWeight() + " кг.");
         }

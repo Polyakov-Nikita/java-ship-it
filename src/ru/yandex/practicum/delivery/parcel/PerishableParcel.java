@@ -15,6 +15,6 @@ public class PerishableParcel extends Parcel {
     }
 
     public boolean isExpired(int currentDay) {
-        return getSendDay() + daysToLive < currentDay;
+        return sendDay + daysToLive < currentDay;
     }
 }
